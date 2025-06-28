@@ -77,7 +77,7 @@ const Hero = () => {
 
                 <div className='text-center lg:text-start z-0'>
                     <Link to='/'>
-                        <FancyButton className='px-8 lg:text-xl mt-2 lg:mt-0'>Resume</FancyButton>
+                        <FancyButton className='px-8 py-2 lg:text-xl mt-2 lg:mt-0'>Resume</FancyButton>
                     </Link>
                 </div>
             </div>
