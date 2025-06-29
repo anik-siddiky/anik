@@ -42,7 +42,7 @@ const itemVariants = {
 };
 
 const floatAnimation = {
-    y: [0, -10, 0],
+    y: [0, -7, 0],
     transition: {
         duration: 2.5,
         repeat: Infinity,
@@ -54,7 +54,7 @@ const Skills = () => {
     return (
         <section className="py-16 bg-base-100">
             <div className="max-w-7xl mx-auto px-4 lg:px-0">
-                <h2 className="text-4xl font-bold text-center mb-4">Skills</h2>
+                <h2 className="text-4xl font-bold mb-4 border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit">Skills</h2>
                 <p className="text-center max-w-xl mx-auto mb-12 text-gray-500 text-lg">Tools and technologies I use to build modern, responsive, and high-quality web applications.</p>
 
                 <motion.div
@@ -70,7 +70,7 @@ const Skills = () => {
                             variants={itemVariants}
                             className="flex flex-col items-center justify-center space-y-2 hover:scale-115 transition-transform duration-300"
                         >
-                            <motion.div animate={floatAnimation} className="text-5xl">
+                            <motion.div animate={floatAnimation} className="text-5xl cursor-pointer">
                                 {skill.icon}
                             </motion.div>
                             <p className="text-sm font-medium text-center">{skill.name}</p>

@@ -1,10 +1,15 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <section className="py-6 lg:py-16 bg-base-100 text-base-content ">
-            <div className="max-w-7xl mx-auto space-y-8 ">
-                <h2 className="text-center text-4xl font-bold">About Me</h2>
+        <div className="py-6 lg:py-10 bg-base-100 text-base-content ">
+            <motion.div
+                className="max-w-7xl mx-auto space-y-8"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.3 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}>
+                <h2 className="text-4xl font-bold border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit">About Me</h2>
 
                 <div className="bg-base-200 p-4 lg:p-6 shadow-xl text-lg leading-relaxed space-y-4 rounded-3xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500">
                     <p>Hi there! I’m a <span className="font-medium">Front-End Developer</span> with a strong
@@ -24,8 +29,8 @@ const About = () => {
 
                     <p>Over the past year, I’ve contributed to several personal and collaborative projects. From eCommerce platforms to admin dashboards and RESTful API-driven apps. These experiences have not only sharpened my technical skills but also taught me the value of clear communication, version control (Git), and iterative design. I’m always learning and exploring new technologies to stay current in the fast-evolving web landscape. Whether it’s experimenting with animations, performance optimization, or UI/UX principles, I enjoy staying curious and building better solutions with each project. My goal is to grow as a developer and create digital experiences that are not only functional but also delightful to use.</p>
                 </div>
-            </div>
-        </section>
+            </motion.div>
+        </div>
     );
 };
 

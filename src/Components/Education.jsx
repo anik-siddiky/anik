@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const Education = () => {
@@ -8,15 +7,15 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true }}
-            className="max-w-7xl mx-auto lg:px-0 px-4 py-10"
+            className="max-w-7xl mx-auto py-10"
         >
-            <div className="bg-base-200 rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-8">
+            <div className="bg-base-200 rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4">
 
                 <motion.h2
                     initial={{ opacity: 0, x: -40 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
-                    className="text-4xl font-extrabold mb-6 border-b-2 inline-block">
+                    className="text-3xl lg:text-4xl font-extrabold mb-6 border-b-2 inline-block border-[#A87914] pb-2">
                     Education</motion.h2>
 
                 <motion.div
@@ -25,7 +24,7 @@ const Education = () => {
                     transition={{ delay: 0.3, duration: 0.5 }}
                     className="flex flex-col md:flex-row justify-between items-start gap-6">
                     <div>
-                        <h3 className="text-2xl font-semibold">Bachelor of Arts in Political Science</h3>
+                        <h3 className="text-2xl font-semibold">Bachelor of Arts (B.A.) in Political Science</h3>
                         <p className="text-sm mt-1">National University, Bangladesh</p>
                         <p className="text-sm mt-1">2022 - 2026</p>
                     </div>

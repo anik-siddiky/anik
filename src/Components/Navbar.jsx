@@ -1,12 +1,24 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router';
+import React, { useRef } from 'react';
+import { Link, NavLink, useLocation } from 'react-router';
 import FancyButton from './FancyButton'
 import { X } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { label } from 'motion/react-client';
 
 const Navbar = () => {
+
+    const navItems = [
+        { path: '/', label: 'Home' },
+        { path: '/about', label: 'About' },
+        { path: '/project', label: 'Project' },
+        { path: '/contact', label: 'Contact' },
+    ];
+    const location = useLocation();
+    const drawerRef = useRef(null);
+
     return (
         <nav className="drawer max-w-7xl mx-auto py-0 lg:py-2">
-            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+            <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
             <div className="drawer-content flex flex-col">
                 <div className="navbar lg:px-0 px-4 w-full justify-between flex flex-row-reverse lg:flex-row">
                     <div className="flex-none justify-end lg:hidden">
@@ -34,11 +46,28 @@ const Navbar = () => {
 
 
                     <div className="hidden flex-none lg:block">
-                        <ul className="menu menu-horizontal">
-                            <li><NavLink>Home</NavLink></li>
-                            <li><NavLink>About</NavLink></li>
-                            <li><NavLink>Project</NavLink></li>
-                            <li><NavLink>Contact</NavLink></li>
+                        <ul className="menu menu-horizontal text-[17px] gap-2 relative">
+                            {navItems.map(({ path, label }) => (
+                                <li key={path} className="relative">
+                                    <NavLink
+                                        to={path}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'text-[#A87914] font-semibold transition duration-300'
+                                                : 'hover:text-[#A87914] transition duration-300'
+                                        }
+                                    >
+                                        {label}
+                                        {location.pathname === path && (
+                                            <motion.div
+                                                layoutId="underline"
+                                                className="absolute -bottom-1 left-0 h-[3px] w-full bg-[#A87914] rounded-full"
+                                                transition={{ type: 'spring', stiffness: 500, damping: 50 }}
+                                            />
+                                        )}
+                                    </NavLink>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -101,10 +130,17 @@ const Navbar = () => {
                         <X size={30} />
                     </label>
 
-                    <li><NavLink to='/'>Home</NavLink></li>
-                    <li><NavLink to='/about'>About</NavLink></li>
-                    <li><NavLink to='/project'>Project</NavLink></li>
-                    <li><NavLink to='/contact'>Contact</NavLink></li>
+                    {
+                        navItems.map(({ path, label }) => (
+                            <li className='text-2xl' key={path}>
+                                <NavLink onClick={() => (drawerRef.current.checked = false)} to={path} className={({ isActive }) =>
+                                    isActive ? 'text-[#A87914] font-semibold' : undefined}>
+                                    {label}
+                                </NavLink>
+                            </li>
+                        ))
+                    }
+
                 </aside>
             </div>
         </nav>
