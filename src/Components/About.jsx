@@ -2,11 +2,11 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="py-6 lg:py-16 bg-base-100 text-base-content">
-            <div className="max-w-7xl mx-auto space-y-8">
+        <section className="py-6 lg:py-16 bg-base-100 text-base-content ">
+            <div className="max-w-7xl mx-auto space-y-8 ">
                 <h2 className="text-center text-4xl font-bold">About Me</h2>
 
-                <div className="bg-base-200 rounded-2xl p-4 lg:p-6 shadow-xl text-lg leading-relaxed space-y-4">
+                <div className="bg-base-200 p-4 lg:p-6 shadow-xl text-lg leading-relaxed space-y-4 rounded-3xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500">
                     <p>Hi there! I’m a <span className="font-medium">Front-End Developer</span> with a strong
                         focus on building responsive, accessible, and engaging user interfaces. My expertise lies in
                         technologies like <strong>HTML5, CSS3, JavaScript (ES6+), React</strong>, and tools such as

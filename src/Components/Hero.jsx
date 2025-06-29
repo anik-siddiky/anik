@@ -14,7 +14,8 @@ const Hero = () => {
             <div className='lg:space-y-5 space-y-3 flex-1'>
                 <motion.h1
                     initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     className='lg:text-7xl text-4xl font-bold text-center lg:text-start'>
                     Anik Siddiky
@@ -22,8 +23,9 @@ const Hero = () => {
 
                 <motion.h3
                     initial={{ opacity: 0, y: -50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.7 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
                     className='text-xl lg:text-3xl font-medium text-center lg:text-start text-gray-500'>
                     Front-End Developer
                 </motion.h3>
