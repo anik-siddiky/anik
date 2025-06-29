@@ -40,7 +40,8 @@ const Navbar = () => {
                     </div>
 
                     <Link to='/'>
-                        <h1 className='text-xl md:text-3xl font-bold'>Anik Siddiky</h1>
+                        <h1 className='text-xl md:text-3xl font-bold hidden lg:block'>Anik Siddiky</h1>
+                        <h1 className='text-2xl md:text-3xl font-bold lg:hidden'>NIK</h1>
                     </Link>
 
 
@@ -71,7 +72,7 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <div className='gap-4 hidden md:flex'>
+                    <div className='gap-4 hidden lg:flex'>
                         <Link>
                             <FancyButton>Contact Me</FancyButton>
                         </Link>

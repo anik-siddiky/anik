@@ -3,9 +3,9 @@ import HomeLayout from "../Layouts/HomeLayout";
 import Home from "../Pages/Home";
 import ErrorLayout from "../Layouts/ErrorLayout";
 import ErrorPage from "../Pages/ErrorPage";
-import About from "../Components/About";
 import Project from "../Components/Project";
 import Contact from "../Components/Contact";
+import AboutPage from "../Pages/AboutPage";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'about',
-                element: <About></About>
+                element: <AboutPage></AboutPage>
             },
             {
                 path: 'project',

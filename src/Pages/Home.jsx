@@ -3,6 +3,7 @@ import Hero from '../Components/Hero';
 import About from '../Components/About';
 import Skills from '../Components/Skills';
 import Education from '../Components/Education';
+import Project from '../Components/Project';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <About></About>
             <Skills></Skills>
             <Education></Education>
+            <Project></Project>
         </div>
     );
 };

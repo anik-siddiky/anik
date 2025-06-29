@@ -30,7 +30,7 @@ const Hero = () => {
                     Front-End Developer
                 </motion.h3>
 
-                <p className='lg:text-xl text-center lg:text-start'>
+                <p className='lg:text-xl text-center lg:text-start md:max-w-[370px] lg:max-w-full mx-auto'>
                     Innovative Front-End Developer crafting smooth, accessible, and visually appealing web experiences. Passionate about writing clean code that
                     <br />
                     <span className='text-[#A87914] font-medium'>
