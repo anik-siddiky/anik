@@ -12,7 +12,7 @@ const About = () => {
                     transition={{ delay: 0.3, duration: 0.3 }}
                 >About Me</motion.h2>
 
-                <div className="bg-base-200 p-4 lg:p-6 shadow-xl text-lg leading-relaxed space-y-4 rounded-3xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500">
+                <div className="bg-base-200 p-4 lg:p-6 shadow-xl text-lg leading-relaxed space-y-4 rounded-xl lg:rounded-3xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500">
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}

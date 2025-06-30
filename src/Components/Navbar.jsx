@@ -73,9 +73,9 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    <div className='gap-4 hidden lg:flex'>
+                    <div className='gap-2.5 hidden lg:flex'>
                         <Link to='/contact'>
-                            <FancyButton>Contact Me</FancyButton>
+                            <FancyButton >Contact Me</FancyButton>
                         </Link>
 
                         <label className="swap swap-rotate">

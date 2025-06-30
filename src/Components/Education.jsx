@@ -9,7 +9,7 @@ const Education = () => {
             viewport={{ once: true }}
             className="max-w-7xl mx-auto py-10"
         >
-            <div className="bg-base-200 rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6">
+            <div className="bg-base-200 rounded-xl lg:rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6">
 
                 <motion.h2
                     initial={{ opacity: 0, x: -40 }}

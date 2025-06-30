@@ -50,7 +50,7 @@ const Project = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.3 }}
-                            className='bg-base-200 rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6'>
+                            className='bg-base-200 rounded-xl lg:rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6'>
                             <div key={project.title} className="flex flex-col lg:flex-row rounded-2xl overflow-hidden">
                                 {/* Image Section */}
                                 <div className="w-full lg:w-1/2 h-64 lg:h-auto">
