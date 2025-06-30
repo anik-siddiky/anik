@@ -44,7 +44,7 @@ const Project = () => {
 
             <div className="max-w-7xl mx-auto ">
                 <div className='grid grid-cols-1 gap-12'>
-                    <h2 className="text-4xl font-bold border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit">My Projects</h2>
+                    <h2 className="text-3xl lg:text-4xl font-bold border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit">My Projects</h2>
                     {projects.map((project) => (
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

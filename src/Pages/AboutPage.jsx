@@ -8,7 +8,7 @@ const AboutPage = () => {
     }, []);
 
     return (
-        <div className='min-h-screen mt-10 lg:mt-16'>
+        <div className='min-h-screen mt-2 lg:mt-16 mb-10 lg:mb-0'>
             <About></About>
         </div>
     );

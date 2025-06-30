@@ -15,7 +15,7 @@ const Contact = () => {
     };
     return (
         <div className="max-w-7xl mx-auto lg:py-16 py-8">
-            <motion.h4 {...motionFadeIn} className='text-4xl font-bold border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit mb-8'>Contact Me</motion.h4>
+            <motion.h4 {...motionFadeIn} className='text-3xl lg:text-4xl font-bold border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit mb-8'>Contact Me</motion.h4>
             <div className="grid grid-cols-1 md:grid-cols-2 flex-row-reverse gap-12 items-start">
                 {/* Left Side - Info */}
                 <div className="space-y-6 order-2 lg:order-1">
