@@ -18,7 +18,7 @@ const Navbar = () => {
 
             if (lastScrollY - currentScrollY > 5) {
                 setShowNavbar(true);
-            } else if (currentScrollY - lastScrollY > 50) {
+            } else if (currentScrollY - lastScrollY > 5) {
                 setShowNavbar(false);
             }
 
