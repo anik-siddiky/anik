@@ -2,7 +2,9 @@ import React, { useRef } from 'react';
 import { Link, NavLink, useLocation } from 'react-router';
 import FancyButton from './FancyButton'
 import { X } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+// eslint-disable-next-line no-unused-vars
 import { label } from 'motion/react-client';
 
 const Navbar = () => {
@@ -40,8 +42,8 @@ const Navbar = () => {
                     </div>
 
                     <Link to='/'>
-                        <h1 className='text-xl md:text-3xl font-bold hidden lg:block'>Anik Siddiky</h1>
-                        <h1 className='text-2xl md:text-3xl font-bold lg:hidden'>NIK</h1>
+                        <h2 className='text-xl md:text-3xl font-extrabold hidden lg:block'>Anik Siddiky</h2>
+                        <h2 className='text-2xl md:text-3xl font-extrabold lg:hidden'>NIK</h2>
                     </Link>
 
 
@@ -73,7 +75,7 @@ const Navbar = () => {
                     </div>
 
                     <div className='gap-4 hidden lg:flex'>
-                        <Link>
+                        <Link to='/contact'>
                             <FancyButton>Contact Me</FancyButton>
                         </Link>
 

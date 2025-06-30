@@ -4,8 +4,8 @@ import Home from "../Pages/Home";
 import ErrorLayout from "../Layouts/ErrorLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Project from "../Components/Project";
-import Contact from "../Components/Contact";
 import AboutPage from "../Pages/AboutPage";
+import ContactPage from "../Pages/ContactPage";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'contact',
-                element: <Contact></Contact>
+                element: <ContactPage></ContactPage>
             }
         ]
     },

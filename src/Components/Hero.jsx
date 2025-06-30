@@ -5,7 +5,9 @@ import { Link } from 'react-router';
 import anik from '../assets/aniksiddiky.png'
 import FancyButton from './FancyButton';
 import { Typewriter } from 'react-simple-typewriter';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import SocialIcons from './SocialIcons';
 
 const Hero = () => {
 
@@ -50,36 +52,11 @@ const Hero = () => {
                     </span>
                 </p>
 
-                <div className="flex gap-4 items-center justify-center lg:justify-start">
-                    <motion.div
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}>
-                        <Link to="https://github.com/anik-siddiky" target="_blank" className="hover:text-[#A87914] transition text-3xl sm:text-4xl">
-                            <FaGithub />
-                        </Link>
-                    </motion.div>
-
-                    <motion.div
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}>
-                        <Link to="https://www.linkedin.com/in/anik-siddiky" target="_blank" className="hover:text-[#A87914] transition text-3xl sm:text-4xl">
-                            <FaLinkedin />
-                        </Link>
-                    </motion.div>
-
-                    <motion.div
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}>
-                        <Link to="https://x.com/codesbynik" target="_blank" className="hover:text-[#A87914] transition text-3xl sm:text-4xl">
-                            <FaSquareXTwitter />
-                        </Link>
-                    </motion.div>
-                </div>
-
+                <SocialIcons></SocialIcons>
 
                 <div className='text-center lg:text-start z-0'>
                     <Link to='/'>
-                        <FancyButton className='px-8 py-2 lg:text-xl mt-2 lg:mt-0'>Resume</FancyButton>
+                        <FancyButton className='px-10 py-2 mt-2 lg:mt-0'>Resume</FancyButton>
                     </Link>
                 </div>
             </div>

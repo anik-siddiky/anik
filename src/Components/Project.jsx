@@ -1,4 +1,5 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 import projectImage1 from '../assets/projectImages/travelSphere.jpg';
 import projectImage2 from '../assets/projectImages/recipeBook.jpg';
 import projectImage3 from '../assets/projectImages/payBillBD.jpg';
@@ -45,7 +46,11 @@ const Project = () => {
                 <div className='grid grid-cols-1 gap-12'>
                     <h2 className="text-4xl font-bold border-b-2 border-[#A87914] pb-2 mx-auto text-center w-fit">My Projects</h2>
                     {projects.map((project) => (
-                        <div className='bg-base-200 rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6'>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3, duration: 0.3 }}
+                            className='bg-base-200 rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6'>
                             <div key={project.title} className="flex flex-col lg:flex-row rounded-2xl overflow-hidden">
                                 {/* Image Section */}
                                 <div className="w-full lg:w-1/2 h-64 lg:h-auto">
@@ -81,7 +86,7 @@ const Project = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
