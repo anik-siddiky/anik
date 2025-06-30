@@ -42,8 +42,7 @@ const Navbar = () => {
                     </div>
 
                     <Link to='/'>
-                        <h2 className='text-xl md:text-3xl font-extrabold hidden lg:block'>Anik Siddiky</h2>
-                        <h2 className='text-2xl md:text-3xl font-extrabold lg:hidden'>NIK</h2>
+                        <h2 className='text-3xl lg:text-4xl font-extrabold italic'>NIK</h2>
                     </Link>
 
 
