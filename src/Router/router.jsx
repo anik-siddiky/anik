@@ -3,9 +3,9 @@ import HomeLayout from "../Layouts/HomeLayout";
 import Home from "../Pages/Home";
 import ErrorLayout from "../Layouts/ErrorLayout";
 import ErrorPage from "../Pages/ErrorPage";
-import Project from "../Components/Project";
 import AboutPage from "../Pages/AboutPage";
 import ContactPage from "../Pages/ContactPage";
+import ProjectPage from "../Pages/ProjectPage";
 
 const router = createBrowserRouter([
     {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'project',
-                element: <Project></Project>
+                element: <ProjectPage></ProjectPage>
             },
             {
                 path: 'contact',

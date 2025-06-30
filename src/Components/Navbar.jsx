@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router';
 import FancyButton from './FancyButton'
 import { X } from 'lucide-react';
@@ -8,6 +8,32 @@ import { motion } from 'framer-motion';
 import { label } from 'motion/react-client';
 
 const Navbar = () => {
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [hasBorder, setHasBorder] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (lastScrollY - currentScrollY > 5) {
+                setShowNavbar(true);
+            } else if (currentScrollY - lastScrollY > 50) {
+                setShowNavbar(false);
+            }
+
+            if (currentScrollY > 80 && lastScrollY > currentScrollY) {
+                setHasBorder(true);
+            } else if (currentScrollY < 10) {
+                setHasBorder(false);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
 
     const navItems = [
         { path: '/', label: 'Home' },
@@ -19,10 +45,10 @@ const Navbar = () => {
     const drawerRef = useRef(null);
 
     return (
-        <nav className="drawer max-w-7xl mx-auto py-0 lg:py-2">
+        <nav className={`drawer py-0 lg:py-2 fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} ${hasBorder ? 'border-b border-base-300' : ''}`}>
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
             <div className="drawer-content flex flex-col">
-                <div className="navbar lg:px-0 px-4 w-full justify-between flex flex-row-reverse lg:flex-row">
+                <div className="navbar lg:px-0 px-4 w-full justify-between flex flex-row-reverse lg:flex-row max-w-7xl mx-auto">
                     <div className="flex-none justify-end lg:hidden">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg
@@ -101,7 +127,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="drawer-side z-[999]">
+            <div className="drawer-side z-[999] lg:hidden">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
 
                 <aside className="menu relative bg-base-200 min-h-full w-full p-4 flex justify-center items-center">
