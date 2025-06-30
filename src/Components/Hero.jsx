@@ -52,18 +52,35 @@ const Hero = () => {
                     </span>
                 </p>
 
-                <SocialIcons></SocialIcons>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
+                >
+                    <SocialIcons></SocialIcons>
+                </motion.div>
 
-                <div className='text-center lg:text-start z-0'>
+                <motion.div className='text-center lg:text-start z-0'
+                    initial={{ opacity: 0, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
+                >
                     <Link to='/'>
                         <FancyButton className='px-10 py-2 mt-2 lg:mt-0'>Resume</FancyButton>
                     </Link>
-                </div>
+                </motion.div>
             </div>
 
-            <div className='flex-1 flex justify-center lg:justify-end lg:mt-0 mt-8'>
+            <motion.div className='flex-1 flex justify-center lg:justify-end lg:mt-0 mt-8'
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
+            >
                 <img className='rounded-full w-72 lg:w-[500px]' src={anik} alt="" />
-            </div>
+            </motion.div>
         </div>
     );
 };

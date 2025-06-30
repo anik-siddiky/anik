@@ -68,8 +68,7 @@ const Skills = () => {
                         <motion.div
                             key={index}
                             variants={itemVariants}
-                            className="flex flex-col items-center justify-center space-y-2 hover:scale-115 transition-transform duration-300"
-                        >
+                            className="flex flex-col items-center justify-center space-y-2 hover:scale-115 transition-transform duration-300">
                             <motion.div animate={floatAnimation} className="text-5xl cursor-pointer">
                                 {skill.icon}
                             </motion.div>

@@ -57,8 +57,7 @@ const Navbar = () => {
                                             isActive
                                                 ? 'text-[#A87914] font-semibold transition duration-300'
                                                 : 'hover:text-[#A87914] transition duration-300'
-                                        }
-                                    >
+                                        }>
                                         {label}
                                         {location.pathname === path && (
                                             <motion.div

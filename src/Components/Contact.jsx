@@ -4,7 +4,7 @@ import FancyButton from './FancyButton';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { Link } from 'react-router';
-import { FaSquareXTwitter } from 'react-icons/fa6';
+import { FaLocationDot, FaSquareXTwitter } from 'react-icons/fa6';
 import SocialIcons from './SocialIcons';
 
 const Contact = () => {
@@ -31,16 +31,17 @@ const Contact = () => {
                             <FaPhone />
                             <span>+880 1706 461 444</span>
                         </div>
+                        <div className="flex items-center gap-3">
+                            <FaLocationDot />
+                            <span>Jhenaidah, Dhaka, Bangladesh</span>
+                        </div>
                     </motion.div>
-
                     <motion.div {...motionFadeIn}
                         className='flex justify-start'>
                         <SocialIcons></SocialIcons>
                     </motion.div>
-
                 </div>
 
-                {/* Right Side - Form */}
                 <form className="space-y-6 w-full order-1 lg:order-2">
                     <motion.div {...motionFadeIn}>
                         <label className="block mb-1 font-medium">Name</label>

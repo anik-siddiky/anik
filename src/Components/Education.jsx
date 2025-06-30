@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 
 const Education = () => {
@@ -7,8 +8,7 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true }}
-            className="max-w-7xl mx-auto py-10"
-        >
+            className="max-w-7xl mx-auto py-10">
             <div className="bg-base-200 rounded-xl lg:rounded-3xl shadow-xl hover:shadow-2xl dark:drop-shadow-[0_4px_8px_rgba(255,255,255,0.2)] dark:hover:drop-shadow-[0_8px_16px_rgba(255,255,255,0.3)] transition-all duration-500 p-4 lg:p-6">
 
                 <motion.h2
