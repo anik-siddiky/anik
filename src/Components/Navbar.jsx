@@ -68,7 +68,7 @@ const Navbar = () => {
                     </div>
 
                     <Link to='/'>
-                        <h2 className='text-3xl lg:text-4xl font-extrabold italic'>NIK</h2>
+                        <h2 className='text-3xl lg:text-4xl font-extrabold italic text-[#A87914]'>NIK</h2>
                     </Link>
 
 
