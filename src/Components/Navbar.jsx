@@ -45,7 +45,7 @@ const Navbar = () => {
     const drawerRef = useRef(null);
 
     return (
-        <nav className={`drawer py-0 lg:py-2 fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} ${hasBorder ? 'border-b border-base-300' : ''}`}>
+        <nav className={`drawer py-0 lg:py-2 backdrop-blur-md  fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'} ${hasBorder ? 'border-b border-base-300' : ''}`}>
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" ref={drawerRef} />
             <div className="drawer-content flex flex-col">
                 <div className="navbar lg:px-0 px-4 w-full justify-between flex flex-row-reverse lg:flex-row max-w-7xl mx-auto">

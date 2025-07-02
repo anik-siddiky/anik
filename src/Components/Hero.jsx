@@ -79,7 +79,7 @@ const Hero = () => {
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
             >
-                <img className='rounded-full w-72 lg:w-[500px]' src={anik} alt="" />
+                <img className='rounded-full w-72 lg:w-[500px] border-b-8 border-[#A87914]' src={anik} alt="" />
             </motion.div>
         </div>
     );
