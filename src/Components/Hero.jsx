@@ -73,7 +73,7 @@ const Hero = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
                 >
-                    <Link to='/'>
+                    <Link to='https://drive.google.com/file/d/1qSGCh2P4q0HhYPtihbWzUi7XUi-pYQtH/view?usp=drive_link' target='_blank'>
                         <FancyButton className='px-10 py-2 mt-2 lg:mt-0'>Resume</FancyButton>
                     </Link>
                 </motion.div>
