@@ -67,14 +67,16 @@ const Hero = () => {
                     <SocialIcons></SocialIcons>
                 </motion.div>
 
-                <motion.div className='text-center lg:text-start z-0'
+                <motion.div className='text-center lg:text-start z-0 gap-2 flex lg:justify-normal justify-center'
                     initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
-                >
-                    <Link to='https://drive.google.com/file/d/1qSGCh2P4q0HhYPtihbWzUi7XUi-pYQtH/view?usp=drive_link' target='_blank'>
-                        <FancyButton className='px-10 py-2 mt-2 lg:mt-0'>Resume</FancyButton>
+                    transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}>
+                    <Link to='https://drive.google.com/file/d/1DHZv2IUaqPT6aPhBxH-BmMXXLdd6pMI_/view?usp=drive_link' target='_blank'>
+                        <FancyButton className=' mt-2 lg:mt-0'>Download Resume</FancyButton>
+                    </Link>
+                    <Link to='https://drive.google.com/file/d/1thd34jg_mLnbZxndKByON1DyCpl56cs3/view?usp=drive_link' target='_blank'>
+                        <FancyButton className='mt-2 lg:mt-0'>Download CV</FancyButton>
                     </Link>
                 </motion.div>
             </div>
