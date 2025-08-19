@@ -72,7 +72,7 @@ const Hero = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}>
-                    <Link to='https://drive.google.com/file/d/1scxXjBRUM5BGCurJaqF06Yvka56hAROD/view?usp=drive_link' target='_blank'>
+                    <Link to='https://drive.google.com/file/d/17vKzVEIllP1e_mg_p4e5Uf25PAI8fApH/view?usp=sharing' target='_blank'>
                         <FancyButton className=' mt-2 lg:mt-0'>Download Resume</FancyButton>
                     </Link>
                     <Link to='https://drive.google.com/file/d/1llyKYbplTssyRQ743GUsq19WMNozM18h/view?usp=drive_link' target='_blank'>
